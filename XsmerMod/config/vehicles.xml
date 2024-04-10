@@ -1,0 +1,3 @@
+<configs>
+    <set xpath="/vehicles/vehicle[@name='vehicleMinibike']/property[@name='velocityMax']/@value">22, 17</set>
+</configs>

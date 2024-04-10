@@ -1,0 +1,3 @@
+<configs>
+    <set xpath="/worldgeneration/biomes/biome//resource[@blockname='terrOreIron']/@prob">8</set>
+</configs>

@@ -1,0 +1,61 @@
+Key,english
+perkHealthGainDesc,This Perk Gives you more Max Health
+perkHealthGainName,Max Healther
+perkStaminaGainName,Stamina Gainer
+perkStaminaGainDesc,This Perk gives you more Max Stamina
+reqUltimateDesc,The Ultimate Power in Your Hands
+attUltimateDesc,The Ultimate Attribute with Ultimate Perks!
+attUltimateName,The Ultimate
+attUltimateShortName,The Power in your Hands!!
+atteffectUltimateDesc,it gives you power to be the most powerfull player in the universe!
+attultimate,The Ultimate
+perkBackPackSizeName,Steve Backpack
+perkBackPackSizeDesc,basically you get bigger Inventory, so more space!
+perkDamageGainName,Damage Gainer
+perkDamageGainDesc,this perk will give you power to kill Monsters!
+perkDamageGainshortDesc,Power to Kill Monsters
+perkSalvageOperatorName,Salvage Operator
+perkSalvageOperatorDesc,More Scrap More Crap!
+perkSalvageOperator001,you get 10% more Scrap Items!
+perkSalvageOperator002,you get 20% more Scrap Items!
+perkSalvageOperator003,you get 30% more Scrap Items!
+perkSalvageOperator004,you get 40% more Scrap Items!
+perkSalvageOperator005,"Crap Scraper,you get 50% more Scrap Items!"
+perkMobilationName,Mobilization
+perkMobilationDesc,This will give you more Weapon/Tool Speed!
+perkMobilation001,just a little bit faster
+perkMobilation002,you are faster about 25% procent
+perkMobilation003,you are even faster about 35% procent
+perkMobilation004,you are even more faster about 45% procent
+perkMobilation005,your are currently 55% faster!
+perkTerminatorName,Terminator
+perkTerminatorDesc,"When you are crafting ammo, you get it More!"
+perkTerminator001,You create now 5 Bullets!
+perkTerminator002,You create now 10 Bullets!
+perkTerminator003,You create now 15 Bullets!
+perkTerminator004,You create now 20 Bullets!
+perkTerminator005,"You create now 30 Bullets, You are the Terminator!"
+perkCropMasterDesc,"More Crops!"
+perkCropMasterName,"Crop Master"
+perkCropMaster001,This will give you 4 more items from Crops
+perkCropMaster002,This will give you 8 more items from Crops
+perkCropMaster003,This will give you 10 more items from Crops
+perkCropMaster004,This will give you 12 more items from Crops
+perkCropMaster005,This will give you 18 more items from Crops
+skillCrafterName,Crafter
+skillCrafterDesc,This Skill gives you abillity to change your Crafting Speed!
+perkCrafterName,Craft Master
+perkCrafterDesc,"Crafting is really Nessesary, so now you can do it faster!!"
+perkCrafter001,"you can craft %0.35 Faster!"
+perkCrafter002,"you can craft %0.50 Faster!"
+perkCrafter003,"you can craft %0.75 Faster!"
+perkCrafter004,"you can craft %0.90 Faster!"
+perkCrafter005,"you can craft %1.45 Faster!"
+perkHunterName,The Ultimate Hunter
+perkHunterDesc,Become the Ultimate Hunter! this perk gives you more resources from dead Animals and makes you less noiser for Animals
+perkFlashName,The Ultimate Speedster!
+perkFlashDesc,"Run Barry,Run!!"
+perkModderName,Modder
+perkModderDesc,You Can Better Modify Weapons/Tools
+perkWeaponMasterName,Weapon Master
+perkWeaponMasterDesc, You Craft Better Weapons

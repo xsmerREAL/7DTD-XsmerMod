@@ -1,0 +1,228 @@
+<configs>
+    <append xpath="/blocks">
+        <block name="Miner">
+			<property name="CustomIcon" value="controlPanelBase01"/>
+			<property name="Class" value="Workstation"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="800"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="Ext3dModel"/>
+			<property name="Texture" value="293"/>
+			<property name="Mesh" value="models"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="Industrial/control_panel_base_01" param1="main_mesh"/>
+			<property name="DisplayType" value="blockMulti" />
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="HeatMapStrength" value="6"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			<property name="Stacknumber" value="1"/>
+			<property class="Workstation">
+				<property name="Modules" value="output"/>		
+				<property name="CraftingAreaRecipes" value="Miner"/>
+			</property>
+			<property name="WorkstationIcon" value="ui_game_symbol_mining" />
+			<property name="OpenSound" value="open_workbench" />
+			<property name="CloseSound" value="close_workbench" />
+			<property name="WorkstationJournalTip" value="workbenchTip" />
+			<property class="RepairItems">
+				<property name="resourceMechanicalParts" value="5"/>
+				<property name="resourceForgedSteel" value="5"/>
+				<property name="resourceSpring" value="5"/>
+			</property>
+			<drop event="Harvest" name="resourceForgedSteel" count="5" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="50" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="20" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceForgedSteel" count="10" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceSpring" count="5" tag="salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="DescriptionKey" value="For crafting scenery"/>
+			<property name="EconomicValue" value="776"/>
+			<property name="Group" value="Basics,Building"/>
+			<property name="SellableToTrader" value="false"/>	
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+			<property name="SortOrder1" value="70i0"/>
+		</block>
+
+		<block name="Seeder">
+			<property name="CustomIcon" value="workbench"/>
+			<property name="Class" value="Workstation"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="800"/>
+			<property name="ModelOffset" value=".5,.5,0"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="tintColor" value="33FF7A"/>
+			<property name="tintColor" value="33FF7A"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="Entities/Crafting/workbenchPrefab"/>
+			<property name="DisplayType" value="blockMulti" />
+			<property name="MultiBlockDim" value="2,2,1"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="HeatMapStrength" value="6"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			<property name="Stacknumber" value="1"/>
+			<property class="Workstation">
+				<property name="Modules" value="output"/>		
+				<property name="CraftingAreaRecipes" value="Seeder"/>
+			</property>
+			<property name="WorkstationIcon" value="ui_game_symbol_mining" />
+			<property name="OpenSound" value="open_workbench" />
+			<property name="CloseSound" value="close_workbench" />
+			<property name="WorkstationJournalTip" value="workbenchTip" />
+			<property class="RepairItems">
+				<property name="resourceMechanicalParts" value="5"/>
+				<property name="resourceForgedSteel" value="5"/>
+				<property name="resourceSpring" value="5"/>
+			</property>
+			<drop event="Harvest" name="resourceForgedSteel" count="5" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="50" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="20" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceForgedSteel" count="10" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceSpring" count="5" tag="salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="DescriptionKey" value="For crafting scenery"/>
+			<property name="EconomicValue" value="776"/>
+			<property name="Group" value="Basics,Building"/>
+			<property name="SellableToTrader" value="false"/>	
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+			<property name="SortOrder1" value="70i0"/>
+		</block>
+    </append>
+	<append xpath="/blocks">
+
+		<block name="Mini Boulder Master">
+			<property name="CreativeMode" value="None"/>
+			<property name="Material" value="Mconcrete"/>                 <!-- Sets the base hardness of the mini-boulder to concrete, making it obvious you're not supposed to destroy it unless you really want to clear the area. -->
+			<property name="CustomIcon" value="rockResourceBroke2"/>
+			<property name="Shape" value="New"/>
+			<property name="Texture" value="175"/>
+			<property name="Mesh" value="cutoutmoveable"/>
+			<property name="Model" value="rock01"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<drop event="Destroy" name="resourceRockSmall" count="1"/>    <!-- Mini-boulders can be destroyed if you want and give a single 'small stone' resource. -->
+			<property name="Map.Color" value="120,120,120"/>
+			<property name="FilterTags" value="foutdoor"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.Next" value="rockResource"/>     <!-- Grow into 'rockResource', the default boulder. -->
+			<property name="PlantGrowing.GrowthRate" value="0.02"/>        <!-- Mini-boulders respawn after 120 real-life minutes (2 hours). -->
+			<property name="PlantGrowing.IsRandom" value="false"/>        <!-- If IsRandom is true, the time will be randomized between 0 and GrowthRate.  No way to make it between X and Y, only 0 and Y. -->
+			<property name="PlantGrowing.FertileLevel" value="0"/>        <!-- Allow mini-boulders to 'grow' even when there's not fertile ground beneath it, such as in the wasteland. -->
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>      <!-- Mini-boulders shouldn't need light to 'grow'. -->
+			<property name="PlantGrowing.LightLevelStay" value="0"/>      <!-- Mini-boulders won't despawn because of a lack of light. -->
+		</block>
+
+		<block name="Mini Boulder 1">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Extends" value="Mini Boulder Master"/>
+			<property name="StabilitySupport" value="false"/>
+		</block>
+
+		<block name="Mini Boulder 2">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Extends" value="Mini Boulder 1"/>
+			<property name="PlantGrowing.Next" value="rockResource02"/>   <!-- Grow into 'rockResource02', a boulder variant that looks a little different (different model). -->
+			<property name="CustomIcon" value="rockResource02Broke2"/>
+		</block>
+
+		<block name="Mini Boulder 3">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Extends" value="Mini Boulder Master" param1="Shape,Texture,Mesh,Model"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="BigDecorationRadius" value="3"/>
+			<property name="IsDistantDecoration" value="false"/>
+			<property name="Model" value="Entities/Resources/rock_resource_broke2Prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="DisplayType" value="blockHardenedMulti" />
+			<property name="MultiBlockDim" value="3,2,3"/>
+			<property name="PassThroughDamage" value="true"/>
+		</block>
+
+		<block name="Mini Boulder 4">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Extends" value="Mini Boulder 3"/>
+			<property name="PlantGrowing.Next" value="rockResource02"/>   <!-- Grow into 'rockResource02', a boulder variant that looks a little different (different model). -->
+			<property name="CustomIcon" value="rockResource02Broke2"/>
+		</block>
+
+		<block name="Mini Iron Boulder">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Extends" value="Mini Boulder Master"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="PlantGrowing.Next" value="oreIronBoulder"/>   <!-- Grow into 'oreIronBoulder', an iron boulder added in A18. -->
+			<property name="CustomIcon" value="oreIronBoulder"/>
+		</block>
+
+		<block name="Mini Lead Boulder">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Extends" value="Mini Boulder Master"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="PlantGrowing.Next" value="oreLeadBoulder"/>   <!-- Grow into 'oreLeadBoulder', a lead boulder added in A18. -->
+			<property name="CustomIcon" value="oreLeadBoulder"/>
+		</block>
+
+		<block name="Mini Coal Boulder">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Extends" value="Mini Boulder Master"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="PlantGrowing.Next" value="oreCoalBoulder"/>   <!-- Grow into 'oreCoalBoulder', a coal boulder added in A18. -->
+			<property name="CustomIcon" value="oreCoalBoulder"/>
+		</block>
+
+		<block name="Mini Potassium Nitrate Boulder">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Extends" value="Mini Boulder Master"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="PlantGrowing.Next" value="orePotassiumNitrateBoulder"/>   <!-- Grow into 'orePotassiumNitrateBoulder', a potassium nitrate boulder added in A18. -->
+			<property name="CustomIcon" value="orePotassiumNitrateBoulder"/>
+		</block>
+
+		<block name="Mini Shale Boulder">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Extends" value="Mini Boulder Master"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="PlantGrowing.Next" value="oreShaleBoulder"/>  <!-- Grow into 'oreShaleBoulder', an oil shale boulder added in A18. -->
+			<property name="CustomIcon" value="oreShaleBoulder"/>
+		</block>
+
+	</append>
+
+  <!-- Use these entries to: degrade into a single stone with high durability and 'regrow' from that -->
+	<append xpath="/blocks/block[@name='rockResourceBroke2']">          <!-- Modify 'rockResourceBroke2', the default boulder that's been broken twice. -->
+		<property name="DowngradeBlock" value="Mini Boulder 1"/>        <!-- Instead of breaking entirely, let's downgrade the block into our mini-boulder instead. -->
+	</append>
+	<append xpath="/blocks/block[@name='rockResource02Broke2']">        <!-- Modify 'rockResource02Broke2', the boulder variant that's been broken twice. -->
+		<property name="DowngradeBlock" value="Mini Boulder 2"/>        <!-- Instead of breaking entirely, let's downgrade the block into our mini-boulder variant instead. -->
+	</append>
+	<append xpath="/blocks/block[@name='oreIronBoulder']">              <!-- Modify 'oreIronBoulder', the iron boulder added in A18 being harvested. -->
+		<property name="DowngradeBlock" value="Mini Iron Boulder"/>     <!-- Instead of breaking entirely, let's downgrade the block into our mini-iron boulder instead. -->
+	</append>
+	<append xpath="/blocks/block[@name='oreLeadBoulder']">              <!-- Modify 'oreLeadBoulder', the lead boulder added in A18 being harvested. -->
+		<property name="DowngradeBlock" value="Mini Lead Boulder"/>     <!-- Instead of breaking entirely, let's downgrade the block into our mini-lead boulder instead. -->
+	</append>
+	<append xpath="/blocks/block[@name='oreCoalBoulder']">              <!-- Modify 'oreCoalBoulder', the coal boulder added in A18 being harvested. -->
+		<property name="DowngradeBlock" value="Mini Coal Boulder"/>     <!-- Instead of breaking entirely, let's downgrade the block into our mini-coal boulder instead. -->
+	</append>
+	<append xpath="/blocks/block[@name='orePotassiumNitrateBoulder']">           <!-- Modify 'orePotassiumNitrateBoulder', the potassium nitrate boulder added in A18 being harvested. -->
+		<property name="DowngradeBlock" value="Mini Potassium Nitrate Boulder"/> <!-- Instead of breaking entirely, let's downgrade the block into our mini-potassium nitrate boulder instead. -->
+	</append>
+	<append xpath="/blocks/block[@name='oreShaleBoulder']">             <!-- Modify 'oreShaleBoulder', the oil shale boulder added in A18 being harvested. -->
+		<property name="DowngradeBlock" value="Mini Shale Boulder"/>    <!-- Instead of breaking entirely, let's downgrade the block into our mini-shale boulder instead. -->
+	</append>
+</configs>

@@ -1,0 +1,110 @@
+<configs>
+
+<append xpath="/recipes">
+
+
+		<recipe name="gunMGT1AK47Parts" count="10" craft_time="0.25">
+			<ingredient name="resourceForgedSteel" count="5" />
+		</recipe>
+
+		<recipe name="gunHandgunT1PistolParts" count="10" craft_time="0.25">
+			<ingredient name="resourceForgedSteel" count="5" />
+		</recipe>
+
+		<recipe name="gunRifleT1HuntingRifleParts" count="10" craft_time="0.25">
+			<ingredient name="resourceForgedSteel" count="5" />
+		</recipe>
+
+		<recipe name="gunShotgunT1DoubleBarrelParts" count="10" craft_time="0.25">
+			<ingredient name="resourceForgedSteel" count="5" />
+		</recipe>
+
+		<recipe name="gunBowT1WoodenBowParts" count="10" craft_time="0.25">
+			<ingredient name="resourceForgedSteel" count="5" />
+		</recipe>
+
+		<recipe name="gunExplosivesT3RocketLauncherParts" count="10" craft_time="0.25">
+			<ingredient name="resourceForgedSteel" count="5" />
+		</recipe>
+
+		<recipe name="gunBotRoboticsParts" count="10" craft_time="0.25">
+			<ingredient name="resourceForgedSteel" count="5" />
+		</recipe>
+
+		<recipe name="meleeWpnBatonT2StunBatonParts" count="10" craft_time="0.25">
+			<ingredient name="resourceForgedSteel" count="5" />
+		</recipe>
+
+		<recipe name="meleeWpnKnucklesT3SteelKnucklesParts" count="10" craft_time="0.25">
+			<ingredient name="resourceForgedSteel" count="5" />
+		</recipe>
+
+		<recipe name="meleeWpnBladeT3MacheteParts" count="10" craft_time="0.25">
+			<ingredient name="resourceForgedSteel" count="5" />
+		</recipe>
+
+		<recipe name="meleeWpnSpearT3SteelSpearParts" count="10" craft_time="0.25">
+			<ingredient name="resourceForgedSteel" count="5" />
+		</recipe>
+
+		<recipe name="meleeWpnClubT3SteelClubParts" count="10" craft_time="0.25">
+			<ingredient name="resourceForgedSteel" count="5" />
+		</recipe>
+
+		<recipe name="meleeWpnSledgeT3SteelSledgehammerParts" count="10" craft_time="0.25">
+			<ingredient name="resourceForgedSteel" count="5" />
+		</recipe>
+		
+		<recipe name="meleeToolAllSteelParts" count="10" craft_time="0.25">
+			<ingredient name="resourceForgedSteel" count="5" />
+		</recipe>
+
+		<recipe name="armorMilitarySetParts" count="10" craft_time="0.25">
+			<ingredient name="resourceForgedSteel" count="5" />
+		</recipe>
+
+		<recipe name="armorSteelSetParts" count="10" craft_time="0.25">
+			<ingredient name="resourceForgedSteel" count="5" />
+		</recipe>
+
+		<recipe name="meleeToolAxeT3ChainsawParts" count="10" craft_time="0.25">
+			<ingredient name="resourceForgedSteel" count="5" />
+		</recipe>
+		
+		<recipe name="resourceOilShale" count="25" craft_time="0.25">
+			<ingredient name="resourceCoal" count="5" />
+			<ingredient name="resourceWood" count="5" />
+		</recipe>
+		
+		<recipe name="resourceScrapPolymers" count="25" craft_time="0.25">
+			<ingredient name="resourceRockSmall" count="2" />
+			<ingredient name="resourceWood" count="3" />
+		</recipe>		
+		
+		<recipe name="resourceAcid" count="25" craft_time="0.25">
+			<ingredient name="resourceOilShale" count="2" />
+		</recipe>		
+
+		<recipe name="resourceAcid" count="25" craft_time="0.25">
+			<ingredient name="resourceOilShale" count="2" />
+		</recipe>
+
+		<recipe name="resourceBrass" count="25" craft_time="0.25" craft_area="forge">
+			<ingredient name="unit_iron" count="50" />
+		</recipe>
+
+		<recipe name="resourceLead" count="25" craft_time="0.25" craft_area="forge">
+			<ingredient name="unit_iron" count="50" />
+		</recipe>
+		
+		<recipe name="resourceGunPowder" count="35" craft_time="0.25" craft_area="forge">
+			<ingredient name="unit_clay" count="15" />
+		</recipe>
+		
+		<recipe name="resourceCoal" count="25" craft_time="0.25" craft_area="forge">
+			<ingredient name="resourceRockSmall" count="15" />
+		</recipe>
+
+</append>
+
+</configs>

@@ -1,0 +1,306 @@
+<configs>
+  <set xpath="/progression/level/@max_level">600</set>
+  <insertAfter xpath="/progression/attributes/attribute[@name='attBooks']"> <!--Missing @name, you put it as name-->
+    <attribute name="attUltimate" name_key="attUltimateName" desc_key="attUltimateDesc" icon="UltimateIcon" min_level="1" max_level="10"> <!--temporary change icon-->
+      <level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="7"><requirement name="PlayerLevel" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="8"><requirement name="PlayerLevel" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="9"><requirement name="PlayerLevel" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="10"><requirement name="PlayerLevel" operation="GTE" value="1"/></level_requirements>
+        <effect_group>
+            <effect_description level="1" desc_key="attUltimateShortName" long_desc_key="atteffectUltimateDesc"/>
+            <effect_description level="2" desc_key="attUltimateShortName" long_desc_key="atteffectUltimateDesc"/>
+            <effect_description level="3" desc_key="attUltimateShortName" long_desc_key="atteffectUltimateDesc"/>
+            <effect_description level="4" desc_key="attUltimateShortName" long_desc_key="atteffectUltimateDesc"/>
+            <effect_description level="5" desc_key="attUltimateShortName" long_desc_key="atteffectUltimateDesc"/>
+            <effect_description level="6" desc_key="attUltimateShortName" long_desc_key="atteffectUltimateDesc"/>
+            <effect_description level="7" desc_key="attUltimateShortName" long_desc_key="atteffectUltimateDesc"/>
+            <effect_description level="8" desc_key="attUltimateShortName" long_desc_key="atteffectUltimateDesc"/>
+            <effect_description level="9" desc_key="attUltimateShortName" long_desc_key="atteffectUltimateDesc"/>
+            <effect_description level="10" desc_key="attUltimateShortName" long_desc_key="atteffectUltimateDesc"/>
+        </effect_group>
+    </attribute>
+  </insertAfter>
+
+  <!--Adding skill-->
+  <append xpath="/progression/skills">
+    <skill name="skillUltimate" parent="attUltimate" name_key="Ultimate" desc_key="skillUltimateDesc" icon="BackpackIcon"> <!--temporary change icon-->
+      <effect_group/>
+    </skill>
+  </append>
+
+  <append xpath="/progression/perks">
+    <!--Health-->
+    <perk name="perkHealthGain" base_skill_point_cost="5" max_level="33" parent="skillUltimate" name_key="perkHealthGainName" desc_key="perkHealthGainDesc" icon="HealthIcon">
+        <level_requirements level="1"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+        <level_requirements level="2"><requirement name="attUltimate" operation="GTE" value="2"/></level_requirements>
+        <level_requirements level="3"><requirement name="attUltimate" operation="GTE" value="3"/></level_requirements>
+        <level_requirements level="4"><requirement name="attUltimate" operation="GTE" value="4"/></level_requirements>
+        <level_requirements level="5"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="6"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="7"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="8"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="9"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="10"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="11"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="12"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="13"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="14"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="15"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="16"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="17"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="18"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="19"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="20"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="21"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="22"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="23"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="24"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="25"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="26"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="27"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="28"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="29"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="30"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="31"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="32"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="33"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <effect_group>
+            <passive_effect name="HealthMax" operation="base_add" level="1,33" value="10,500"></passive_effect>
+            <effect_description level="1,33" desc_key="perkHealthGainDesc"></effect_description>
+      </effect_group>
+    </perk>
+    
+    <!--Stamina-->
+    <perk name="perkStaminaGain" max_level="33" parent="skillUltimate" name_key="perkStaminaGainName" desc_key="perkStaminaGainDesc" icon="StaminaIcon">
+        <level_requirements level="1"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+        <level_requirements level="2"><requirement name="attUltimate" operation="GTE" value="2"/></level_requirements>
+        <level_requirements level="3"><requirement name="attUltimate" operation="GTE" value="3"/></level_requirements>
+        <level_requirements level="4"><requirement name="attUltimate" operation="GTE" value="4"/></level_requirements>
+        <level_requirements level="5"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="6"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="7"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="8"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="9"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="10"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="11"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="12"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="13"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="14"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="15"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="16"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="17"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="18"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="19"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="20"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="21"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="22"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="23"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="24"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="25"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="26"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="27"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="28"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="29"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="30"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="31"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="32"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="33"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <effect_group>
+            <passive_effect name="StaminaMax" operation="base_add" level="1,33" value="10,500"></passive_effect>
+            <effect_description level="1,33" desc_key="perkStaminaGainDesc"></effect_description>
+      </effect_group>
+    </perk>
+
+    <perk name="perkDamageGain" max_level="15" parent="skillUltimate" name_key="perkDamageGainName" desc_key="perkDamageGainDesc" icon="DeathIcon">
+        <level_requirements level="1"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+        <level_requirements level="2"><requirement name="attUltimate" operation="GTE" value="2"/></level_requirements>
+        <level_requirements level="3"><requirement name="attUltimate" operation="GTE" value="3"/></level_requirements>
+        <level_requirements level="4"><requirement name="attUltimate" operation="GTE" value="4"/></level_requirements>
+        <level_requirements level="5"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="6"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="7"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="8"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="9"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="10"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="11"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="12"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="13"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="14"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <level_requirements level="15"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <effect_group>
+            <passive_effect name="DamageModifier" operation="perc_add" level="1,33" value="1,12"></passive_effect>
+            <effect_description level="1,33" desc_key="perkDamageGainshortDesc"></effect_description>
+        </effect_group>
+    </perk>
+
+    <perk name="perkSalvageOperator" max_level="5" base_skill_point_cost="5" cost_multiplier_per_level="1.68" parent="skillUltimate" name_key="perkSalvageOperatorName" desc_key="perkSalvageOperatorDesc" icon="ui_game_symbol_tool">
+        <level_requirements level="1"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+        <level_requirements level="2"><requirement name="attUltimate" operation="GTE" value="2"/></level_requirements>
+        <level_requirements level="3"><requirement name="attUltimate" operation="GTE" value="3"/></level_requirements>
+        <level_requirements level="4"><requirement name="attUltimate" operation="GTE" value="4"/></level_requirements>
+        <level_requirements level="5"><requirement name="attUltimate" operation="GTE" value="5"/></level_requirements>
+        <effect_group>
+            <passive_effect name="HarvestCount" operation="perc_add" level="1,5" value="0.9,9" tags="salvageHarvest"></passive_effect>
+            <effect_description level="1" desc_key="perkSalvageOperator001" long_desc_key="perkSalvageOperatorDesc"></effect_description>
+            <effect_description level="2" desc_key="perkSalvageOperator002" long_desc_key="perkSalvageOperatorDesc"></effect_description>
+            <effect_description level="3" desc_key="perkSalvageOperator003" long_desc_key="perkSalvageOperatorDesc"></effect_description>
+            <effect_description level="4" desc_key="perkSalvageOperator004" long_desc_key="perkSalvageOperatorDesc"></effect_description>
+            <effect_description level="5" desc_key="perkSalvageOperator005" long_desc_key="perkSalvageOperatorDesc"></effect_description>
+        </effect_group>
+    </perk>
+
+    <perk name="perkMobilation" max_level="5" base_skill_point_cost="15" cost_multiplier_per_level="1.25" parent="skillUltimate" name_key="perkMobilationName" desc_key="perkMobilationDesc" icon="StaminaIcon">
+        <level_requirements level="1"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+        <level_requirements level="2"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+        <level_requirements level="3"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+        <level_requirements level="4"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+        <level_requirements level="5"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+        <effect_group>
+
+          <requirement name="HoldingItemHasTags" tags="medium"/>
+          <passive_effect name="AttacksPerMinute" operation="perc_add" level="1" value="0.1"></passive_effect>
+          <passive_effect name="StaminaLoss" operation="perc_add" level="1" value="-0.1"></passive_effect>
+          
+          <requirement name="HoldingItemHasTags" tags="medium"/>
+          <passive_effect name="AttacksPerMinute" operation="perc_add" level="2" value="0.25"></passive_effect>
+          <passive_effect name="StaminaLoss" operation="perc_add" level="2" value="-0.25"></passive_effect>
+
+          <requirement name="HoldingItemHasTags" tags="medium"/>
+          <passive_effect name="AttacksPerMinute" operation="perc_add" level="3" value="0.35"></passive_effect>
+          <passive_effect name="StaminaLoss" operation="perc_add" level="3" value="-0.35"></passive_effect>
+
+          <requirement name="HoldingItemHasTags" tags="medium"/>
+          <passive_effect name="AttacksPerMinute" operation="perc_add" level="4" value="0.45"></passive_effect>
+          <passive_effect name="StaminaLoss" operation="perc_add" level="4" value="-0.45"></passive_effect>
+
+          <requirement name="HoldingItemHasTags" tags="medium"/>
+          <passive_effect name="AttacksPerMinute" operation="perc_add" level="5" value="0.55"></passive_effect>
+          <passive_effect name="StaminaLoss" operation="perc_add" level="5" value="-0.55"></passive_effect>
+
+          <effect_description level="1" desc_key="perkMobilation001"></effect_description>
+          <effect_description level="2" desc_key="perkMobilation002"></effect_description>
+          <effect_description level="3" desc_key="perkMobilation003"></effect_description>
+          <effect_description level="4" desc_key="perkMobilation004"></effect_description>
+          <effect_description level="5" desc_key="perkMobilation005"></effect_description>
+        </effect_group>
+    </perk>
+
+	  <perk name="perkTerminator" max_level="5" parent="skillUltimate" name_key="perkTerminatorName" desc_key="perkTerminatorDesc" icon="TerminatorIcon">
+		  <level_requirements level="1"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+		  <level_requirements level="2"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+		  <level_requirements level="3"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+		  <level_requirements level="4"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+		  <level_requirements level="5"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+		  <effect_group>
+        <passive_effect name="CraftingOutputCount" tags="ammo" operation="base_set" level="1" value="5"></passive_effect>
+        <passive_effect name="CraftingTime" tags="ammo" operation="perc_add" level="1" value="-.05"></passive_effect> 
+
+        <passive_effect name="CraftingOutputCount" tags="ammo" operation="base_set" level="2" value="10"></passive_effect>
+        <passive_effect name="CraftingTime" tags="ammo" operation="perc_add" level="2" value="-.15"></passive_effect>
+        
+        <passive_effect name="CraftingOutputCount" tags="ammo" operation="base_set" level="3" value="15"></passive_effect>
+        <passive_effect name="CraftingTime" tags="ammo" operation="perc_add" level="3" value="-.25"></passive_effect>
+        
+        <passive_effect name="CraftingOutputCount" tags="ammo" operation="base_set" level="4" value="20"></passive_effect>
+        <passive_effect name="CraftingTime" tags="ammo" operation="perc_add" level="4" value="-.35"></passive_effect>
+        
+        <passive_effect name="CraftingOutputCount" tags="ammo" operation="base_set" level="5" value="30"></passive_effect>
+        <passive_effect name="CraftingTime" tags="ammo" operation="perc_add" level="5" value="-.45"></passive_effect>
+
+		    <effect_description level="1" desc_key="perkTerminator001"></effect_description>
+		    <effect_description level="2" desc_key="perkTerminator002"></effect_description>
+		    <effect_description level="3" desc_key="perkTerminator003"></effect_description>
+		    <effect_description level="4" desc_key="perkTerminator004"></effect_description>
+		    <effect_description level="5" desc_key="perkTerminator005"></effect_description>
+		  </effect_group>
+	  </perk>
+    <perk name="perkCropMaster" max_level="5" parent="skillUltimate" name_key="perkCropMasterName" desc_key="perkCropMasterDesc" icon="CropMasterIcon">
+		  <level_requirements level="1"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+		  <level_requirements level="2"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+		  <level_requirements level="3"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+		  <level_requirements level="4"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+		  <level_requirements level="5"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <effect_group>
+        <passive_effect name="HarvestCount" tags="wildCropsHarvest,cropHarvest" operation="base_add" level="1,2,3,4,5" value="4,8,10,12,18"></passive_effect>
+        <effect_description level="1" desc_key="perkCropMaster001"></effect_description>
+        <effect_description level="2" desc_key="perkCropMaster002"></effect_description>
+        <effect_description level="3" desc_key="perkCropMaster003"></effect_description>
+        <effect_description level="4" desc_key="perkCropMaster004"></effect_description>
+        <effect_description level="5" desc_key="perkCropMaster005"></effect_description>
+      </effect_group>
+    </perk>
+  </append>
+  <append xpath="/progression/skills">
+    <skill name="skillCrafter" parent="attUltimate" name_key="skillCrafterName" desc_key="skillCrafterDesc" icon="SpeedIcon">
+      <effect_group/>
+    </skill>
+  </append>
+  <append xpath="/progression/perks">
+    <perk name="perkCrafter" parent="skillCrafter" base_skill_cost_point="5" cost_multiplier_per_level="1.18"  max_level="5" name_key="perkCrafterName" desc_key="perkCrafterDesc" icon="SpeedIcon">
+      <level_requirements level="1"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="2"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="3"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="4"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="5"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <effect_group>
+        <passive_effect name="CraftingTime" operation="perc_add" level="1,2,3,4,5" value="-.09,-.11,-.17,-.24,-.36"></passive_effect>
+        <effect_description level="1" desc_key="perkCrafter001"></effect_description>
+        <effect_description level="2" desc_key="perkCrafter002"></effect_description>
+        <effect_description level="3" desc_key="perkCrafter003"></effect_description>
+        <effect_description level="4" desc_key="perkCrafter004"></effect_description>
+        <effect_description level="5" desc_key="perkCrafter005"></effect_description>
+      </effect_group>
+    </perk>
+    <perk name="perkHunter" parent="skillUltimate" base_skill_cost_point="25" cost_multiplier_per_level="1.68" max_level="12" name_key="perkHunterName" desc_key="perkHunterDesc" icon="HunterIcon">
+      <level_requirements level="1"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="2"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="3"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="4"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="5"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="6"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="7"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="8"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="9"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="10"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="11"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="12"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <effect_group>
+        <passive_effect name="HarvestCount" tags="butcherHarvest" operation="base_add" level="1,2,3,4,5,6,7,8,9,10,11,12" value="2,2,4,4,6,6,8,8,10,10,12,12"></passive_effect>
+        <passive_effect name="NoiseMultiplier" operation="perc_add" level="1,12" value="0,-2"></passive_effect>
+      </effect_group>
+    </perk>
+    <perk name="perkFlash" parent="skillUltimate" base_skill_cost_point="15" cost_multiplier_per_level="1.45" max_level="5" name_key="perkFlashName" desc_key="perkFlashDesc" icon="FlashIcon">
+      <level_requirements level="1"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="2"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="3"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="4"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="5"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <effect_group>
+        <passive_effect name="RunSpeed" operation="perc_add" level="1,2,3,4,5" value="0.2,0.3,0.4,0.5,0.7"></passive_effect>
+      </effect_group>
+    </perk>
+    <perk name="perkModder" parent="skillUltimate" base_skill_cost_point="5" cost_multiplier_per_level="1.68" max_level="5" name_key="perkModderName" desc_key="perkModderDesc" icon="ModderIcon">
+      <level_requirements level="1"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="2"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="3"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="4"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <level_requirements level="5"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <effect_group>
+        <passive_effect name="ModSlots" tags="weapon" operation="base_add" level="1,2,3,4,5" value="2,4,6,8,10"></passive_effect>
+      </effect_group>
+    </perk>
+    <perk name="perkWeaponMaster" parent="skillUltimate" base_skill_cost_point="30" max_level="1" name_key="perkWeaponMasterName" desc_key="perkWeaponMasterDesc" icon="WeaponMasterIcon">
+      <level_requirements level="1"><requirement name="attUltimate" operation="GTE" value="1"/></level_requirements>
+      <effect_group>
+        <passive_effect name="RecipeTagUnlocked" tags="gunRifleT2MarksmanRifle" operation="base_set" level="1" value="1"></passive_effect>
+        <passive_effect name="CraftingTier" operation="base_add" level="1" value="8"></passive_effect>
+      </effect_group>
+    </perk>
+  </append>
+</configs>

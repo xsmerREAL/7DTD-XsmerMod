@@ -1,0 +1,35 @@
+<configs>
+    <set xpath="/progression/level/@max_level">
+        600
+    </set>
+    <insertAfter xpath="/progression/attributes/attribute[name='attBooks']">
+        <attribute name="attultimate" name_key="Ultimate" desc_key="attUltimateDesc" icon="UltimateIcon">
+            <level_requirements level="1,10"><requirement name="PlayerLevel" operation="GTE" value="1"/>
+                <effect_group>
+                    <effect_description level="1,10" desc_key="Ultimate" long_desc_key="UltimatePower"/>
+                </effect_group>
+            </level_requirements>
+        </attribute>
+    </insertAfter>
+
+    <append xpath="/progression/perks">
+        <perk name="perkHealthGain" max_level="50" name_key="perkHealthGainName" desc_key="perkHealthGainDesc" icon="ui_game_symbol_medical">
+            <level_requirements level="1,50"><requirement name="ProgressionLevel" progression_name="attUltimate" operation="GTE" value="1" desc_key="reqUltimateDesc"/>
+                <effect_gorup>
+                    <requirement name="ItemHasTags" tags="attStrength">
+                        <passive_effect name="HealthMax" operation="base_add" level="1,50" value="10,500"></passive_effect>
+                    </requirement>
+                </effect_gorup>
+            </level_requirements>
+        </perk>
+        <perk name="perkStaminaGain" max_level="50" name_key="perkHealthGainName" desc_key="perkHealthGainDesc" icon="statStaminaChangeOT">
+            <level_requirements level="1,50"><requirement name="ProgressionLevel" progression_name="attUltimate" operation="GTE" value="1" desc_key="reqUltimateDesc"/>
+                <effect_gorup>
+                    <requirement name="ItemHasTags" tags="attStrength">
+                        <passive_effect name="StaminaMax" operation="base_add" level="1,50" value="10,500"></passive_effect>
+                    </requirement>
+                </effect_gorup>
+            </level_requirements>
+        </perk>
+    </append>
+</configs>

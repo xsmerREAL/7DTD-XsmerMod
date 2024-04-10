@@ -1,0 +1,22 @@
+<configs>
+    <append xpath="/xui/ruleset">
+        <window_group name="workstation_Miner" controller="XUiC_WorkstationWindowGroup">
+            <window name="windowCraftingList"/>
+            <window name="windowCraftingQueue"/>
+            <window name="craftingInfoPanel"/>
+            <window name="windowNonPagingHeader"/>
+            <window name="windowFuel"/>
+            <window name="windowOutput"/>
+        </window_group>
+    </append>
+    <append xpath="/xui/ruleset">
+        <window_group name="workstation_Seeder" controller="XUiC_WorkstationWindowGroup">
+            <window name="windowCraftingList"/>
+            <window name="windowCraftingQueue"/>
+            <window name="craftingInfoPanel"/>
+            <window name="windowNonPagingHeader"/>
+            <window name="windowOutput"/>
+        </window_group>
+    </append>
+
+</configs>
